@@ -45,8 +45,7 @@ How It Works:
 5. The Result application reads the data from PostgreSQL.
 6. The browser displays the updated voting result.
 
-Troubleshooting Experience
-
+Troubleshooting Experience:
 During this project, I practised troubleshooting several Kubernetes and application issues, including:
 - Incorrect Kubernetes YAML fields
 - Incorrect container and service ports
