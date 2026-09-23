@@ -3,15 +3,7 @@ A hands-on Kubernetes project created to practise container orchestration, servi
 The application allows users to vote between two options, processes the vote through Redis and a worker service, stores the result in PostgreSQL, and displays the updated result through a separate result application.
 
 ## Architecture
-Vote App
-   ↓
-Redis
-   ↓
-Worker
-   ↓
-PostgreSQL
-   ↓
-Result App
+Vote App > Redis > Worker > PostgreSQL > Result App
 
 ## Tech Stack
 - Kubernetes
