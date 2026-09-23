@@ -1,4 +1,4 @@
-# Kubernetes Voting App
+# Kubernetes Simple Voting App
 A hands-on Kubernetes project created to practise container orchestration, service networking, and troubleshooting using a multi-service voting application.
 The application allows users to vote between two options, processes the vote through Redis and a worker service, stores the result in PostgreSQL, and displays the updated result through a separate result application.
 
