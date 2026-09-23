@@ -23,8 +23,7 @@ Result App
 - WSL2
 - YAML
 
-
-The application consists of:
+## The application consists of:
 - Vote Pod
 - Result Pod
 - Worker Pod
@@ -34,10 +33,9 @@ The application consists of:
 - Result Service
 - Redis Service
 - PostgreSQL Service
-
 The frontend applications are exposed using NodePort / local port forwarding, while Redis and PostgreSQL communicate internally through ClusterIP services.
 
-How It Works:
+## How It Works:
 1. A user submits a vote through the Vote application.
 2. The vote is stored temporarily in Redis.
 3. The Worker retrieves the vote from Redis.
@@ -45,7 +43,7 @@ How It Works:
 5. The Result application reads the data from PostgreSQL.
 6. The browser displays the updated voting result.
 
-Troubleshooting Experience:
+## Troubleshooting Experience:
 During this project, I practised troubleshooting several Kubernetes and application issues, including:
 - Incorrect Kubernetes YAML fields
 - Incorrect container and service ports
