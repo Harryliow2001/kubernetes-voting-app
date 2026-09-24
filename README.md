@@ -15,7 +15,7 @@ Vote App > Redis > Worker > PostgreSQL > Result App
 - WSL2
 - YAML
 
-## The application consists of:
+## The application consists of
 - Vote Pod
 - Result Pod
 - Worker Pod
@@ -25,9 +25,8 @@ Vote App > Redis > Worker > PostgreSQL > Result App
 - Result Service
 - Redis Service
 - PostgreSQL Service
-The frontend applications are exposed using NodePort / local port forwarding, while Redis and PostgreSQL communicate internally through ClusterIP services.
 
-## How It Works:
+## How It Works
 1. A user submits a vote through the Vote application.
 2. The vote is stored temporarily in Redis.
 3. The Worker retrieves the vote from Redis.
@@ -35,14 +34,27 @@ The frontend applications are exposed using NodePort / local port forwarding, wh
 5. The Result application reads the data from PostgreSQL.
 6. The browser displays the updated voting result.
 
-## Troubleshooting Experience:
+## What I Implemented
+- Kubernetes Deployments for Vote, Result, Worker, Redis and PostgreSQL
+- ClusterIP services for internal communication
+- NodePort / port-forwarding for frontend access
+- Labels and selectors for service discovery
+- Redis queue integration
+- PostgreSQL persistence layer
+- Multi-container service communication
+
+## Troubleshooting Experience
 During this project, I practised troubleshooting several Kubernetes and application issues, including:
-- Incorrect Kubernetes YAML fields
-- Incorrect container and service ports
+- HTTP 500 errors caused by backend connectivity problems
+- Incorrect Redis and PostgreSQL ports
 - Service selector and Pod label mismatches
-- Redis connectivity issues
-- PostgreSQL connectivity issues
-- Pod recreation after immutable specification changes
-- Application HTTP 500 errors
-- Service endpoint verification
-- Container log analysis
+- PostgreSQL dependency/startup issues
+- Immutable Pod specification errors
+- Kubernetes YAML validation errors
+- Service endpoint and DNS troubleshooting
+### Tools used:
+- kubectl logs
+- kubectl describe
+- kubectl get endpoints
+- kubectl get svc
+- kubectl exec
