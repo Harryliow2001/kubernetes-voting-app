@@ -58,3 +58,19 @@ During this project, I practised troubleshooting several Kubernetes and applicat
 - kubectl get endpoints
 - kubectl get svc
 - kubectl exec
+
+## Screenshots
+
+### Voting Page
+![Voting Application](screenshots/votingpage.png)
+### Result Page
+![Result Application](screenshots/resultpage.png)
+### Deployments
+![Deployments](screenshots/deployments.png)
+### Run the commands
+![Voting Application](screenshots/applyYaml.png)
+![Voting Application](screenshots/getsvc.png)
+![Voting Application](screenshots/kubectldeply.png)
+![Voting Application](screenshots/replicas.png)
+![Voting Application](screenshots/replicaspod.png)
+![Voting Application](screenshots/portforwarding.png)
