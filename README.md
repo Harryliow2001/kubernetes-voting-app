@@ -68,9 +68,15 @@ During this project, I practised troubleshooting several Kubernetes and applicat
 ### Deployments
 ![Deployments](screenshots/deployments.png)
 ### Run the commands
+#### 1. Apply -f
 ![Voting Application](screenshots/applyYaml.png)
+#### 2. Get service
 ![Voting Application](screenshots/getsvc.png)
+#### 3. Get deployments
 ![Voting Application](screenshots/kubectldeply.png)
+#### 4. Scale Replicas
 ![Voting Application](screenshots/replicas.png)
+#### 5. Replicas Pods
 ![Voting Application](screenshots/replicaspod.png)
+#### 6. Port Forwarding
 ![Voting Application](screenshots/portforwarding.png)
